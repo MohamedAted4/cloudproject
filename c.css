@@ -1,0 +1,107 @@
+/* Adjusted CSS to accommodate wider table with additional columns */
+/* Reset default margin and padding */
+body, h1, p, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(college.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; /* Adjusted property */
+    color: #333; /* Dark gray text color */
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px; /* Adjusted maximum width to accommodate wider table */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* White container background with transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Heading styles */
+h1 {
+    color: #007bff; /* Blue heading color */
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table header styles */
+thead th {
+    background-color: #007bff; /* Blue header background */
+    color: #fff; /* White text color */
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #fff; /* Add bottom border for header */
+}
+
+/* Table data styles */
+tbody td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    vertical-align: middle; /* Align content vertically */
+}
+
+/* Highlight table rows on hover */
+tbody tr:hover {
+    background-color: #f2f2f2; /* Light gray background on hover */
+}
+
+/* Animation for table rows */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+tbody tr {
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Highlighted row styles */
+.highlight {
+    background-color: #ffc107; /* Yellow background color */
+}
+
+/* Additional styles for search student table */
+.search-table {
+    margin-top: 50px;
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.search-table th,
+.search-table td {
+    padding: 15px; /* Increased padding */
+    text-align: center; /* Center align text */
+    border: 1px solid #dee2e6; /* Lighter gray border */
+}
+
+.search-table th {
+    background-color: #6c757d; /* Gray header background */
+    color: #fff; /* White text color */
+    border-bottom: 2px solid #fff; /* Add bottom border for header */
+}
+
+.search-table tr:hover {
+    background-color: #adb5bd; /* Darker gray background on hover */
+}
+
+.search-table .highlight {
+    background-color: #ffc107; /* Yellow background color for highlighted row */
+}
